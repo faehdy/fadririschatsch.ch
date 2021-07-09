@@ -1,0 +1,35 @@
+/*
+ * Globals
+ */
+
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+h1 {
+    color: aliceblue;
+}
+h4 {
+}
+
+h4 {text-underline: aliceblue;
+}
+
+p {}
+
+body {
+    background-color: #3D3C3C;
+    color: aliceblue;
+    font-family: Verdana;
+}
+
+nav{
+    color: #3D3C3C;
+    background-color: aliceblue;
+    text-underline-color: aliceblue;
+}
