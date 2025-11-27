@@ -68,30 +68,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ===========================
-   Contact Form Handling
+   Contact Form Handling - Removed (using Formspree instead)
    =========================== */
 
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    // Here you would typically send the form data to a server
-    // For now, we'll just show an alert and reset the form
-    
-    console.log('Form submitted:', { name, email, message });
-    
-    // Show success message
-    alert('Thank you for your message! I will get back to you soon.');
-    
-    // Reset the form
-    contactForm.reset();
-});
+// Formspree handles the form submission automatically
+// No JavaScript needed - just use the action attribute in the form
 
 /* ===========================
    Active Navigation Link on Scroll
