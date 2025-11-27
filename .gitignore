@@ -1,0 +1,5 @@
+# Ignore all photos in the photos directory
+photos/
+
+# But keep the directory structure
+!photos/.gitkeep

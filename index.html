@@ -1,44 +1,86 @@
-<!doctype html>
-<html lang="de">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="Stylesheet" type="text/css" href="DesignFR.css"/>
-  <style>
-    .wrapper {
-      display: grid;
-      grid-template-columns: 55% 25%;
-    }
-    .nav-element {
-      display: inline-block;
-      margin: 10px;
-      line-height: 10px;
-    }
-  </style>
-  <title>Fadri Rischatsch</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <center>
-    <nav>
-      <div class="nav-wrapper">
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li class="nav-element"><a class="" href="#">Home</a></li>
-          <li class="nav-element"><a class="" href="#">About Me</a></li>
-          <!-- <li class="nav-element"><a class="" href="#">Projects</a></li>
-          <li class="nav-element"><a class="" href="#">Contact</a></li>
-          <li class="nav-element"><a class="" href="#">Impressum</a></li> -->
-        </ul>
-      </div>
+    <!-- Fixed Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Portfolio</a>
+            <ul class="nav-menu">
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    <h1>Willkomma uf minera Website</h1>
-    <img src="Dude_am_See.jpg" width="60%"/>
-    <h4>Allgemein</h4>
-    <p>Dia Website isch no sehr im Ufbau und as isch noni ganz klar was das werda söll...</p>
-    <br>
-  </center>
-  <footer>
-    <center>
-      <p>Das ist alles noch im Aufbau :P </p>
-      <p>***Built 1500m above sea level***</p>
-    </center>
-  </footer>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project tiles with alternating animation directions -->
+                <a href="project-nasa-spaceapps.html" class="project-tile" data-animation="left">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=500&h=300&fit=crop" alt="NASA Space Apps Challenge">
+                    </div>
+                    <h3 class="project-title">NASA Space Apps Challenge 2024</h3>
+                    <p class="project-description">Winning project at NASA Space Apps Challenge Lucerne - Developing innovative solutions for space exploration challenges.</p>
+                </a>
+                
+                <a href="project-air-pollution.html" class="project-tile" data-animation="right">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=500&h=300&fit=crop" alt="Air Pollution Estimation">
+                    </div>
+                    <h3 class="project-title">Global Air Pollution Estimation</h3>
+                    <p class="project-description">Semester project focused on estimating and visualizing global air pollution patterns using data science and machine learning.</p>
+                </a>
+                
+                <a href="photos.html" class="project-tile" data-animation="left">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=500&h=300&fit=crop" alt="Photography">
+                    </div>
+                    <h3 class="project-title">Photography</h3>
+                    <p class="project-description">A collection of my favorite photographs capturing moments, landscapes, and stories from around the world.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm a Space Systems Engineering student with a serious case of looking-up syndrome – though in my field, that's actually encouraged. With a background in Geospatial Engineering, I've traded measuring Earth on the ground for measuring form above - what a change. These days, you'll find me nerding out over Earth observation, GNSS (yes, the thing that stops you from getting lost), and pretty much anything that orbits our planet.</p>
+                    
+                    <p>I'm a huge fan of interdisciplinary projects, because why stick to one field when you can confuse yourself with several at once? Whether it's combining satellite data with machine learning or tackling challenges at NASA hackathons, I love projects that make me think "wait, can we actually do that?"</p>
+                    
+                    <p>When I'm not calculating spoofing probabilities or debugging code, you'll catch me on the slopes skiing or snowboarding (gravity is my favorite force).</p>
+                    
+                    <a href="contact.html" class="cta-button">Get In Touch</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://photos.app.goo.gl/5DfLhxTCLJXQ5gNr5" alt="Profile" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
