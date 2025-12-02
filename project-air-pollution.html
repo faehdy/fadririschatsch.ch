@@ -26,11 +26,11 @@
             <a href="index.html#projects" class="back-link">← Back to Projects</a>
             
             <div class="project-hero">
-                <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=1200&h=600&fit=crop" alt="Global Air Pollution Estimation">
+                <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=1200&h=600&fit=crop" alt="Dynamic Air Pollution Estimation">
             </div>
 
             <div class="project-content">
-                <h1>Global Air Pollution Estimation</h1>
+                <h1>Dynamic Air Pollution Estimation</h1>
                 
                 <div class="project-meta">
                     <div class="meta-item">
@@ -39,65 +39,35 @@
                     </div>
                     <div class="meta-item">
                         <span class="meta-label">Focus</span>
-                        <span class="meta-value">Data Science & ML</span>
+                        <span class="meta-value">Deep Learning & Remote Sensing</span>
                     </div>
                     <div class="meta-item">
-                        <span class="meta-label">Technologies</span>
-                        <span class="meta-value">Python, Machine Learning</span>
+                        <span class="meta-label">Domain</span>
+                        <span class="meta-value">Environmental Monitoring</span>
                     </div>
                 </div>
 
                 <h2>Project Overview</h2>
-                <p>This semester project focused on developing a comprehensive system for estimating and analyzing global air pollution patterns. Using advanced data science techniques and machine learning algorithms, the project aimed to provide accurate pollution estimates and visualizations to support environmental research and policy-making.</p>
-                <p>Air pollution is one of the most pressing environmental challenges of our time, affecting millions of people worldwide. This project sought to make pollution data more accessible and actionable through innovative analysis and visualization techniques.</p>
+                <p>Accurately monitoring air pollution is a global challenge, currently limited by the sparse coverage of ground stations and the coarse resolution of satellite instruments. Building on pioneering work that fuses multi-source satellite data to estimate NO₂ at high resolution, this project aims to advance the field by introducing multi-pollutant modeling and enhanced temporal dynamics.</p>
+                <p>Our goal is to develop a deep learning framework capable of predictiong multiple pollutants and providing high-frequency, monthly estimates of air quality.</p>
 
                 <h2>Methodology</h2>
-                <p>The project employed a multi-faceted approach combining data collection, processing, machine learning modeling, and visualization:</p>
+                <p>The project extends existing deep learning architectures through two primary development tracks:</p>
                 <ul>
-                    <li>Data aggregation from multiple global air quality monitoring stations</li>
-                    <li>Data preprocessing and cleaning to ensure quality and consistency</li>
-                    <li>Machine learning models for pollution estimation in areas without monitoring stations</li>
-                    <li>Time-series analysis to identify trends and patterns</li>
-                    <li>Interactive visualization dashboard for data exploration</li>
+                    <li><strong>High-Frequency Temporal Modeling:</strong> Moving beyond time-averaged data to model sequences, allowing for the prediction of pollutant dynamics and seasonal trends throughout the year.</li>
+                    <li><strong>Multi-Target Prediction:</strong> Modifying the model architecture to simultaneously estimate concentrations of multiple key pollutants (such as PM, O₃, SO2) alongside NO₂, leveraging their co-emission patterns.</li>
+                    <li><strong>Data Fusion:</strong> Integrating high-resolution optical imagery (Sentinel-2) with atmospheric measurements (Sentinel-5P) and meteorological datasets (e.g., wind and precipitation) to improve prediction accuracy.</li>
                 </ul>
 
-                <h2>Technical Implementation</h2>
-                <p>The system was built using Python as the primary programming language, leveraging powerful libraries for data science and machine learning:</p>
+                <h2>Key Objectives</h2>
                 <ul>
-                    <li><strong>Data Processing:</strong> Pandas and NumPy for efficient data manipulation</li>
-                    <li><strong>Machine Learning:</strong> Scikit-learn for predictive modeling</li>
-                    <li><strong>Visualization:</strong> Matplotlib, Plotly for interactive charts and maps</li>
-                    <li><strong>Geospatial Analysis:</strong> GeoPandas for location-based analysis</li>
-                    <li><strong>API Integration:</strong> Connection to real-time air quality data sources</li>
+                    <li><strong>Global Scalability:</strong> Training on data-dense regions and testing generalization on diverse geographic areas to ensure the model works globally.</li>
+                    <li><strong>Monthly Resolution:</strong> producing dynamic air quality maps that reflect short-term pollution events rather than just long-term averages.</li>
+                    <li><strong>Unified Framework:</strong> Merging temporal and multi-target components into a single, robust model validated against ground-truth networks like the EEA.</li>
                 </ul>
 
-                <h2>Key Features</h2>
-                <ul>
-                    <li>Global coverage with estimation for areas lacking monitoring infrastructure</li>
-                    <li>Multiple pollutant tracking (PM2.5, PM10, NO2, O3, CO)</li>
-                    <li>Historical trend analysis and forecasting capabilities</li>
-                    <li>Interactive maps showing pollution levels across regions</li>
-                    <li>Comparative analysis between different geographic areas</li>
-                    <li>Data export functionality for further research</li>
-                </ul>
-
-                <h2>Challenges & Solutions</h2>
-                <p><strong>Data Quality & Availability:</strong> Air quality monitoring stations are unevenly distributed globally, with many regions lacking coverage. We addressed this by developing interpolation algorithms and machine learning models to estimate pollution levels in unmonitored areas based on nearby stations and environmental factors.</p>
-                <p><strong>Model Accuracy:</strong> Ensuring the accuracy of pollution estimates required extensive model training and validation. We used cross-validation techniques and compared multiple algorithms to achieve optimal performance.</p>
-                <p><strong>Real-time Processing:</strong> Processing large volumes of data in real-time presented computational challenges. We optimized our pipeline using efficient data structures and parallel processing techniques.</p>
-
-                <h2>Results & Impact</h2>
-                <p>The project successfully created a robust system for global air pollution estimation with high accuracy rates. The visualization dashboard provides an intuitive interface for researchers, policymakers, and the public to understand air quality patterns.</p>
-                <p>Key achievements include:</p>
-                <ul>
-                    <li>Achieved estimation accuracy of over 85% in validation tests</li>
-                    <li>Created comprehensive pollution maps for previously unmonitored regions</li>
-                    <li>Identified significant pollution trends and seasonal patterns</li>
-                    <li>Developed a scalable framework for future environmental monitoring projects</li>
-                </ul>
-
-                <h2>Future Directions</h2>
-                <p>This semester project laid the foundation for ongoing research in environmental data science. Future enhancements could include integration of satellite data, real-time alert systems for pollution events, and mobile applications for personal air quality monitoring.</p>
+                <h2>Expected Outcomes</h2>
+                <p>This work aims to deliver a functional deep learning model capable of generating detailed, monthly air quality maps for multiple pollutants. The final results will include a scientific analysis of performance trade-offs in multi-task settings and a valid assessment of the model's ability to predict temporal trends across different environmental contexts.</p>
             </div>
         </div>
     </section>
