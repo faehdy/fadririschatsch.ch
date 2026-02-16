@@ -35,7 +35,7 @@
                 <div class="project-meta">
                     <div class="meta-item">
                         <span class="meta-label">Type</span>
-                        <span class="meta-value">Semester Project</span>
+                        <span class="meta-value">Group Semester Project</span>
                     </div>
                     <div class="meta-item">
                         <span class="meta-label">Focus</span>
@@ -48,26 +48,31 @@
                 </div>
 
                 <h2>Project Overview</h2>
-                <p>Accurately monitoring air pollution is a global challenge, currently limited by the sparse coverage of ground stations and the coarse resolution of satellite instruments. Building on pioneering work that fuses multi-source satellite data to estimate NO₂ at high resolution, this project aims to advance the field by introducing multi-pollutant modeling and enhanced temporal dynamics.</p>
-                <p>Our goal is to develop a deep learning framework capable of predictiong multiple pollutants and providing high-frequency, monthly estimates of air quality.</p>
+                <p>This semester project, completed as part of a collaborative team effort, explores how artificial intelligence can help monitor air pollution more effectively across the globe.</p>
+                <p>Air quality monitoring today faces a major limitation: ground-based measurement stations are few and far between, while satellite data often lacks the detail needed for local-scale analysis. Our project bridges this gap by using deep learning to combine multiple data sources and generate high-resolution air quality estimates.</p>
 
-                <h2>Methodology</h2>
-                <p>The project extends existing deep learning architectures through two primary development tracks:</p>
+                <h2>What We Did</h2>
+                <p>Working as a group, we developed machine learning models that:</p>
                 <ul>
-                    <li><strong>High-Frequency Temporal Modeling:</strong> Moving beyond time-averaged data to model sequences, allowing for the prediction of pollutant dynamics and seasonal trends throughout the year.</li>
-                    <li><strong>Multi-Target Prediction:</strong> Modifying the model architecture to simultaneously estimate concentrations of multiple key pollutants (such as PM, O₃, SO2) alongside NO₂, leveraging their co-emission patterns.</li>
-                    <li><strong>Data Fusion:</strong> Integrating high-resolution optical imagery (Sentinel-2) with atmospheric measurements (Sentinel-5P) and meteorological datasets (e.g., wind and precipitation) to improve prediction accuracy.</li>
+                    <li><strong>Combine satellite imagery with atmospheric data</strong> from European Space Agency missions (Sentinel-2 and Sentinel-5P) to predict pollution levels at a much finer resolution than satellites alone can provide</li>
+                    <li><strong>Track pollution over time</strong> by creating monthly estimates instead of just long-term averages, helping to capture seasonal changes and pollution events</li>
+                    <li><strong>Predict multiple pollutants</strong> including nitrogen dioxide (NO₂), particulate matter, and ozone from a single unified model</li>
                 </ul>
 
-                <h2>Key Objectives</h2>
+                <h2>Key Insights</h2>
+                <p>Through our collaborative work, we found that:</p>
                 <ul>
-                    <li><strong>Global Scalability:</strong> Training on data-dense regions and testing generalization on diverse geographic areas to ensure the model works globally.</li>
-                    <li><strong>Monthly Resolution:</strong> producing dynamic air quality maps that reflect short-term pollution events rather than just long-term averages.</li>
-                    <li><strong>Unified Framework:</strong> Merging temporal and multi-target components into a single, robust model validated against ground-truth networks like the EEA.</li>
+                    <li>Deep learning can successfully fill the gap between sparse ground measurements and coarse satellite observations</li>
+                    <li>Adding temporal modeling helps capture dynamic pollution patterns throughout the year</li>
+                    <li>Multi-pollutant prediction is feasible but requires careful balancing of model complexity and performance</li>
+                    <li>Models trained on data-rich regions can generalize to areas with limited ground monitoring</li>
                 </ul>
 
-                <h2>Expected Outcomes</h2>
-                <p>This work aims to deliver a functional deep learning model capable of generating detailed, monthly air quality maps for multiple pollutants. The final results will include a scientific analysis of performance trade-offs in multi-task settings and a valid assessment of the model's ability to predict temporal trends across different environmental contexts.</p>
+                <h2>Impact</h2>
+                <p>This project demonstrates how AI and remote sensing can work together to provide better air quality information, especially in regions where traditional monitoring infrastructure is limited. The techniques developed could support public health initiatives, environmental policy, and scientific research on atmospheric pollution.</p>
+
+                <h2>Demonstrator</h2>
+                <p>Our project includes an interactive web application that allows users to visualize air pollution estimates from one specific area. It can be accessed <a href="https://nb11.github.io/air_pollution_poster_fair/" target="_blank">here</a>.</p>
             </div>
         </div>
     </section>
