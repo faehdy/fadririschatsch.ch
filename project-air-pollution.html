@@ -49,12 +49,12 @@
 
                 <h2>Project Overview</h2>
                 <p>This semester project, completed as part of a collaborative team effort, explores how artificial intelligence can help monitor air pollution more effectively across the globe.</p>
-                <p>Air quality monitoring today faces a major limitation: ground-based measurement stations are few and far between, while satellite data often lacks the detail needed for local-scale analysis. Our project bridges this gap by using deep learning to combine multiple data sources and generate high-resolution air quality estimates.</p>
+                <p>Air quality monitoring today faces a major limitation: ground-based measurement stations are few and far between, while satellite data often lacks the detail needed for local-scale analysis. Our Project builds on the work of <a href="https://doi.org/10.1109/TGRS.2022.3160827" target="_blank">Scheibenreif et al. (2020)</a> and added the capability for multiple pollutant predictions and temporal context.</p>
 
                 <h2>What We Did</h2>
                 <p>Working as a group, we developed machine learning models that:</p>
                 <ul>
-                    <li><strong>Combine satellite imagery with atmospheric data</strong> from European Space Agency missions (Sentinel-2 and Sentinel-5P) to predict pollution levels at a much finer resolution than satellites alone can provide</li>
+                    <li><strong>Combine multispectral satellite imagery with atmospheric data</strong> from European Space Agency missions (Sentinel-2 and Sentinel-5P) to predict pollution levels at a much finer resolution than satellites alone can provide</li>
                     <li><strong>Track pollution over time</strong> by creating monthly estimates instead of just long-term averages, helping to capture seasonal changes and pollution events</li>
                     <li><strong>Predict multiple pollutants</strong> including nitrogen dioxide (NO₂), particulate matter, and ozone from a single unified model</li>
                 </ul>
@@ -62,10 +62,10 @@
                 <h2>Key Insights</h2>
                 <p>Through our collaborative work, we found that:</p>
                 <ul>
-                    <li>Deep learning can successfully fill the gap between sparse ground measurements and coarse satellite observations</li>
+                    <li>Deep learning can fill the gap between sparse ground measurements and coarse satellite observations</li>
                     <li>Adding temporal modeling helps capture dynamic pollution patterns throughout the year</li>
                     <li>Multi-pollutant prediction is feasible but requires careful balancing of model complexity and performance</li>
-                    <li>Models trained on data-rich regions can generalize to areas with limited ground monitoring</li>
+                    <li>Models trained on data-rich regions work in areas with sparse ground monitoring only with limited accuracy</li>
                 </ul>
 
                 <h2>Impact</h2>
